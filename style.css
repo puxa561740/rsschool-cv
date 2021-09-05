@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#body {
+  background-color: #EDF1F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  max-width: 800px;
+  width: 100%;
+}
+
+.header > .head_avatar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.avatar > img {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 40%;
+}
+
+.init {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name, 
+.surname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.head_inf {
+  margin-left: 20px;
+}
+
+section > h3,
+section > h4 {
+  margin: 10px;
+}
+
+section {
+  border: 1px solid #000;
+  margin: 2px;
+}
+
+section > ul,
+section > p{
+  margin: 20px
+}
+
+.personal_inf,
+.technology_inf,
+.worck_inf,
+.courses,
+.language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer > p > img {
+  width: 40%;
+} 
+.footer > p {
+  text-align: center;
+  margin: 10px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
+
+a:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+a {
+  color: #000;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.contacts > ul > li {
+  margin: 5px;
+  padding: 10px;
+}
+
+.worck_inf >ul > li {
+  margin: 7px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.worck_inf >ul > li > a {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header > .head_avatar {
+    display: flex;
+    flex-direction: column;
+  }
+  .init {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 460px) {
+  .contacts > ul > li {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+  }
+}
